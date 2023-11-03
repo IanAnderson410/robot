@@ -734,7 +734,7 @@ void finalMeasurement(){
     distancia = tiempoTotal/58;
     myTimerTrigger.stop();
 }
-void do100ms(){
+void getDistance(){
     do100++;
     trigger.write(1); // El trigger es igual a 1
     triggerTimer.attach_us(&doTimeout, 10);
